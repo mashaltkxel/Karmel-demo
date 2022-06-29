@@ -2,7 +2,7 @@ import json
 import boto3
 
 def lambda_handler(event, context):
-    message = 'Hello {} {}!'.format(event['first_name'])  
+    message = 'Hello {}!'.format(event['first_name'])  
 
     #Sending message to our SQS 
     sqs = boto3.client('sqs')
